@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { search } from "../../actions/mapActions";
+const SearchBar = props => {
+  const [searchTerm, setTerm] = useState("");
+  const handleSearchBar = searchTerm => {
+    setTerm(searchTerm);
+  };
 
-const SearchBar = ({ handleSearchBar, handleSearchSubmit }) => {
+  const handleSearchSubmit = e => {
+    e.preventDefault();
+    props.search(searchTerm);
+  };
+
   return (
     <MDBCol md="12">
       <MDBFormInline
@@ -34,4 +46,13 @@ const SearchBar = ({ handleSearchBar, handleSearchSubmit }) => {
   );
 };
 
-export default  SearchBar;
+SearchBar.propTypes = {
+  search: PropTypes.func.isRequired,
+  pharmacies: PropTypes.array.isRequired
+};
+
+const mapStateToProps = state => ({
+  pharmacies: state.pharmacies
+});
+
+export default connect(mapStateToProps, { search })(SearchBar);
