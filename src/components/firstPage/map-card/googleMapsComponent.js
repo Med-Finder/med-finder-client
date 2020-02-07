@@ -1,6 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { withScriptjs, withGoogleMap, GoogleMap } from "react-google-maps";
 import MarkerList from "./markerList";
+import { connect } from "react-redux";
 export class GoogleMapsComponent extends React.Component {
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(position => {
@@ -20,15 +22,15 @@ export class GoogleMapsComponent extends React.Component {
           <GoogleMap
             zoom={11}
             center={
-              this.props?.searchResult?.length
+              this.props?.pharmacies?.length
                 ? {
-                    lat: this.props.searchResult[0].lat,
-                    lng: this.props.searchResult[0].lng
+                    lat: this.props.pharmacies[0].lat,
+                    lng: this.props.pharmacies[0].lng
                   }
                 : this.state.location
             }
           >
-            {<MarkerList locations={this.props.searchResult ?? []} />}
+            {<MarkerList />}
           </GoogleMap>
         ) : (
           <h1 style={{ width: "80%", margin: "auto 40%" }}>we can't find it</h1>
@@ -38,6 +40,15 @@ export class GoogleMapsComponent extends React.Component {
   }
 }
 
-export default  GoogleMapsComponent = withScriptjs(
-  withGoogleMap(GoogleMapsComponent)
-);
+GoogleMapsComponent.propTypes = {
+  pharmacies: PropTypes.array.isRequired
+};
+
+const mapStateToProps = state => ({
+  pharmacies: state.pharmacies
+});
+
+export default connect(
+  mapStateToProps,
+  {}
+)((GoogleMapsComponent = withScriptjs(withGoogleMap(GoogleMapsComponent))));
