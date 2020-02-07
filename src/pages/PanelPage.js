@@ -15,13 +15,13 @@ import {
   MDBNavItem,
   MDBNavLink,
   MDBCardGroup,
-  MDBContainer
+  MDBContainer,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const PanelPage = () => {
-  const panelStyle = { width: '22rem' };
+  const panelStyle = {width: '22rem'};
   return (
     <MDBContainer>
       <DocsLink
@@ -38,7 +38,7 @@ const PanelPage = () => {
           </MDBCardText>
           <div className='flex-row'>
             <a href='#!'>MDBCard link</a>
-            <a href='#!' style={{ marginLeft: '1.25rem' }}>
+            <a href='#!' style={{marginLeft: '1.25rem'}}>
               Another link
             </a>
           </div>
@@ -52,7 +52,7 @@ const PanelPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Titles, text and links'>
-        <MDBCard style={{ width: '22rem' }}>
+        <MDBCard style={{width: '22rem'}}>
           <MDBCardBody>
             <MDBCardTitle>Panel title</MDBCardTitle>
             <MDBCardTitle tag='h6' sub className='mb-2 text-muted'>
@@ -73,7 +73,7 @@ const PanelPage = () => {
       </SectionContainer>
 
       <SectionContainer header='List groups'>
-        <MDBCard style={{ width: '22rem' }}>
+        <MDBCard style={{width: '22rem'}}>
           <MDBListGroup>
             <MDBListGroupItem>Cras justo odio</MDBListGroupItem>
             <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
@@ -87,7 +87,7 @@ const PanelPage = () => {
         className='d-flex justify-content-center'
       >
         <MDBCard
-          style={{ width: '22rem', marginBottom: '2rem' }}
+          style={{width: '22rem', marginBottom: '2rem'}}
           className='mr-4'
         >
           <MDBCardHeader color='deep-orange lighten-1'>Featured</MDBCardHeader>
@@ -101,7 +101,7 @@ const PanelPage = () => {
           </MDBCardBody>
         </MDBCard>
 
-        <MDBCard style={{ width: '22rem' }} className='text-center mr-4'>
+        <MDBCard style={{width: '22rem'}} className='text-center mr-4'>
           <MDBCardHeader color='success-color'>Featured</MDBCardHeader>
           <MDBCardBody>
             <MDBCardTitle>Special title treatment</MDBCardTitle>
@@ -116,7 +116,7 @@ const PanelPage = () => {
           <MDBCardFooter color='success-color'>2 days ago</MDBCardFooter>
         </MDBCard>
 
-        <MDBCard style={{ width: '22rem', marginBottom: '2rem' }}>
+        <MDBCard style={{width: '22rem', marginBottom: '2rem'}}>
           <MDBCardHeader color='primary-color' tag='h3'>
             Featured
           </MDBCardHeader>
@@ -186,7 +186,7 @@ const PanelPage = () => {
       </SectionContainer>
 
       <SectionContainer header='Using custom CSS'>
-        <MDBCard style={{ width: '20rem' }}>
+        <MDBCard style={{width: '20rem'}}>
           <MDBCardBody>
             <MDBCardTitle>Special title treatment</MDBCardTitle>
             <MDBCardText>
@@ -202,7 +202,7 @@ const PanelPage = () => {
         title='Text alignment'
         className='d-flex justify-content-center'
       >
-        <MDBCard className='text-left mr-4' style={{ width: '20rem' }}>
+        <MDBCard className='text-left mr-4' style={{width: '20rem'}}>
           <MDBCardBody>
             <MDBCardTitle>Special title treatment</MDBCardTitle>
             <MDBCardText>
@@ -213,7 +213,7 @@ const PanelPage = () => {
           </MDBCardBody>
         </MDBCard>
 
-        <MDBCard className='text-center mr-4' style={{ width: '20rem' }}>
+        <MDBCard className='text-center mr-4' style={{width: '20rem'}}>
           <MDBCardBody>
             <MDBCardTitle>Special title treatment</MDBCardTitle>
             <MDBCardText>
@@ -224,7 +224,7 @@ const PanelPage = () => {
           </MDBCardBody>
         </MDBCard>
 
-        <MDBCard className='text-right' style={{ width: '20rem' }}>
+        <MDBCard className='text-right' style={{width: '20rem'}}>
           <MDBCardBody>
             <MDBCardTitle>Special title treatment</MDBCardTitle>
             <MDBCardText>
@@ -328,7 +328,7 @@ const PanelPage = () => {
           <MDBCard
             border='primary'
             className='m-3'
-            style={{ maxWidth: '18rem' }}
+            style={{maxWidth: '18rem'}}
           >
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-primary'>
@@ -343,7 +343,7 @@ const PanelPage = () => {
           <MDBCard
             border='secondary'
             className='m-3'
-            style={{ maxWidth: '18rem' }}
+            style={{maxWidth: '18rem'}}
           >
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-secondary'>
@@ -358,7 +358,7 @@ const PanelPage = () => {
           <MDBCard
             border='success'
             className='m-3'
-            style={{ maxWidth: '18rem' }}
+            style={{maxWidth: '18rem'}}
           >
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-success'>
@@ -373,7 +373,7 @@ const PanelPage = () => {
           <MDBCard
             border='danger'
             className='m-3'
-            style={{ maxWidth: '18rem' }}
+            style={{maxWidth: '18rem'}}
           >
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-danger'>
@@ -388,7 +388,7 @@ const PanelPage = () => {
           <MDBCard
             border='warning'
             className='m-3'
-            style={{ maxWidth: '18rem' }}
+            style={{maxWidth: '18rem'}}
           >
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-warning'>
@@ -400,7 +400,7 @@ const PanelPage = () => {
             </MDBCardBody>
           </MDBCard>
 
-          <MDBCard border='info' className='m-3' style={{ maxWidth: '18rem' }}>
+          <MDBCard border='info' className='m-3' style={{maxWidth: '18rem'}}>
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-info'>
               <MDBCardTitle tag='h5'>Info card title</MDBCardTitle>
@@ -411,7 +411,7 @@ const PanelPage = () => {
             </MDBCardBody>
           </MDBCard>
 
-          <MDBCard border='light' className='m-3' style={{ maxWidth: '18rem' }}>
+          <MDBCard border='light' className='m-3' style={{maxWidth: '18rem'}}>
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody>
               <MDBCardTitle tag='h5'>Light card title</MDBCardTitle>
@@ -425,7 +425,7 @@ const PanelPage = () => {
           <MDBCard
             border='success'
             className='m-3'
-            style={{ maxWidth: '18rem' }}
+            style={{maxWidth: '18rem'}}
           >
             <MDBCardHeader transparent border='success'>
               Header
@@ -442,7 +442,7 @@ const PanelPage = () => {
             </MDBCardFooter>
           </MDBCard>
 
-          <MDBCard border='dark' className='m-3' style={{ maxWidth: '18rem' }}>
+          <MDBCard border='dark' className='m-3' style={{maxWidth: '18rem'}}>
             <MDBCardHeader>Header</MDBCardHeader>
             <MDBCardBody className='text-dark'>
               <MDBCardTitle tag='h5'>Dark card title</MDBCardTitle>
@@ -730,4 +730,4 @@ const PanelPage = () => {
   );
 };
 
-export default  PanelPage;
+export default PanelPage;

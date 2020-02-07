@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   MDBContainer,
   MDBRow,
   MDBCol,
   MDBNav,
   MDBNavItem,
-  MDBLink
+  MDBLink,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -403,4 +403,4 @@ class NavsPage extends Component {
   }
 }
 
-export default  NavsPage;
+export default NavsPage;

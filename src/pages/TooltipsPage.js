@@ -1,10 +1,10 @@
 import React from 'react';
-import { MDBTooltip, MDBContainer, MDBBtn } from 'mdbreact';
+import {MDBTooltip, MDBContainer, MDBBtn} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const TooltipsPage = () => {
-  const style = { display: 'inline-block', maxWidth: '50vh' };
+  const style = {display: 'inline-block', maxWidth: '50vh'};
   return (
     <MDBContainer>
       <DocsLink
@@ -17,7 +17,7 @@ const TooltipsPage = () => {
         <MDBTooltip
           domElement
           tag='span'
-          style={{ display: 'inline' }}
+          style={{display: 'inline'}}
           placement='top'
         >
           <span className='blue-text'> you probably </span>
@@ -29,7 +29,7 @@ const TooltipsPage = () => {
         <MDBTooltip
           domElement
           tag='span'
-          style={{ display: 'inline' }}
+          style={{display: 'inline'}}
           placement='top'
         >
           <span className='blue-text'> have a </span>
@@ -41,7 +41,7 @@ const TooltipsPage = () => {
         <MDBTooltip
           domElement
           tag='span'
-          style={{ display: 'inline' }}
+          style={{display: 'inline'}}
           placement='top'
         >
           <span className='blue-text'> whatever keytar </span>
@@ -51,7 +51,7 @@ const TooltipsPage = () => {
         <MDBTooltip
           domElement
           tag='span'
-          style={{ display: 'inline' }}
+          style={{display: 'inline'}}
           placement='top'
         >
           <span className='blue-text'> twitter handle </span>
@@ -98,4 +98,4 @@ const TooltipsPage = () => {
   );
 };
 
-export default  TooltipsPage;
+export default TooltipsPage;

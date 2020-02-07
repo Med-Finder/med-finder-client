@@ -9,33 +9,33 @@ import {
   MDBTable,
   MDBTableBody,
   MDBTableHead,
-  MDBIcon
+  MDBIcon,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const TableStylesPage = props => {
+const TableStylesPage = (props) => {
   const columns = [
     {
       label: '#',
       field: 'id',
-      sort: 'asc'
+      sort: 'asc',
     },
     {
       label: 'First',
       field: 'first',
-      sort: 'asc'
+      sort: 'asc',
     },
     {
       label: 'Last',
       field: 'last',
-      sort: 'asc'
+      sort: 'asc',
     },
     {
       label: 'Handle',
       field: 'handle',
-      sort: 'asc'
-    }
+      sort: 'asc',
+    },
   ];
 
   const rows_regular_btn = [
@@ -47,7 +47,7 @@ const TableStylesPage = props => {
         </MDBBtn>
       ),
       last: 'Otto',
-      handle: '@mdo'
+      handle: '@mdo',
     },
     {
       id: 2,
@@ -57,7 +57,7 @@ const TableStylesPage = props => {
           Button
         </MDBBtn>
       ),
-      handle: '@fat'
+      handle: '@fat',
     },
     {
       id: 3,
@@ -67,8 +67,8 @@ const TableStylesPage = props => {
         <MDBBtn color='purple' size='sm'>
           Button
         </MDBBtn>
-      )
-    }
+      ),
+    },
   ];
 
   const rows_outline_btn = [
@@ -80,7 +80,7 @@ const TableStylesPage = props => {
         </MDBBtn>
       ),
       last: 'Otto',
-      handle: '@mdo'
+      handle: '@mdo',
     },
     {
       id: 2,
@@ -90,7 +90,7 @@ const TableStylesPage = props => {
           Button
         </MDBBtn>
       ),
-      handle: '@fat'
+      handle: '@fat',
     },
     {
       id: 3,
@@ -100,8 +100,8 @@ const TableStylesPage = props => {
         <MDBBtn color='purple' outline size='sm'>
           Button
         </MDBBtn>
-      )
-    }
+      ),
+    },
   ];
 
   const rows_rounded_btn = [
@@ -113,7 +113,7 @@ const TableStylesPage = props => {
         </MDBBtn>
       ),
       last: 'Otto',
-      handle: '@mdo'
+      handle: '@mdo',
     },
     {
       id: 2,
@@ -123,7 +123,7 @@ const TableStylesPage = props => {
           Button
         </MDBBtn>
       ),
-      handle: '@fat'
+      handle: '@fat',
     },
     {
       id: 3,
@@ -133,8 +133,8 @@ const TableStylesPage = props => {
         <MDBBtn color='default' rounded size='sm'>
           Button
         </MDBBtn>
-      )
-    }
+      ),
+    },
   ];
 
   const data_icons = {
@@ -142,47 +142,47 @@ const TableStylesPage = props => {
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: [<MDBIcon key='Lorem' icon='leaf' className='mr-2 blue-text' aria-hidden='true' />, 'Lorem'],
         field: 'lorem',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: [<MDBIcon key='Ipsum' icon='leaf' className='mr-2 teal-text' aria-hidden='true' />, 'Ipsum'],
         field: 'ipsum',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: [<MDBIcon key='Dolor' icon='leaf' className='mr-2 indigo-text' aria-hidden='true' />, 'Dolor'],
         field: 'dolor',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
         id: 1,
         lorem: [<MDBIcon key='cell1' icon='gem' className='mr-2 grey-text' aria-hidden='true' />, 'Cell1'],
         ipsum: [<MDBIcon key='cell2' icon='download' className='mr-2 grey-text' aria-hidden='true' />, 'Cell2'],
-        dolor: [<MDBIcon key='cell3' icon='book' className='mr-2 grey-text' aria-hidden='true' />, 'Cell3']
+        dolor: [<MDBIcon key='cell3' icon='book' className='mr-2 grey-text' aria-hidden='true' />, 'Cell3'],
       },
       {
         id: 2,
         lorem: [
           <MDBIcon key='cell1' icon='graduation-cap' className='mr-2 grey-text' aria-hidden='true' />,
-          'Cell1'
+          'Cell1',
         ],
         ipsum: [<MDBIcon key='cell2' icon='gift' className='mr-2 grey-text' aria-hidden='true' />, 'Cell2'],
-        dolor: [<MDBIcon key='cell3' icon='image' className='mr-2 grey-text' aria-hidden='true' />, 'Cell3']
+        dolor: [<MDBIcon key='cell3' icon='image' className='mr-2 grey-text' aria-hidden='true' />, 'Cell3'],
       },
       {
         id: 3,
         lorem: [<MDBIcon key='cell1' icon='magic' className='mr-2 grey-text' aria-hidden='true' />, 'Cell1'],
         ipsum: [<MDBIcon key='cell2' icon='table' className='mr-2 grey-text' aria-hidden='true' />, 'Cell2'],
-        dolor: [<MDBIcon key='cell3' icon='edit' className='mr-2 grey-text' aria-hidden='true' />, 'Cell3']
-      }
-    ]
+        dolor: [<MDBIcon key='cell3' icon='edit' className='mr-2 grey-text' aria-hidden='true' />, 'Cell3'],
+      },
+    ],
   };
 
   return (
@@ -254,4 +254,4 @@ const TableStylesPage = props => {
   );
 };
 
-export default  TableStylesPage;
+export default TableStylesPage;

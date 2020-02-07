@@ -4,7 +4,7 @@ import {
   MDBListGroupItem,
   MDBRow,
   MDBBadge,
-  MDBContainer
+  MDBContainer,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -21,7 +21,7 @@ const ListGroupPage = () => {
           className='d-flex justify-content-center'
           header='Basic example'
         >
-          <MDBListGroup className='my-4 mx-4' style={{ width: '22rem' }}>
+          <MDBListGroup className='my-4 mx-4' style={{width: '22rem'}}>
             <MDBListGroupItem>Cras justo odio</MDBListGroupItem>
             <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
             <MDBListGroupItem>Morbi leo risus</MDBListGroupItem>
@@ -34,7 +34,7 @@ const ListGroupPage = () => {
           className='d-flex justify-content-center'
           header='Labels'
         >
-          <MDBListGroup className='my-4 mx-4' style={{ width: '22rem' }}>
+          <MDBListGroup className='my-4 mx-4' style={{width: '22rem'}}>
             <MDBListGroupItem className='d-flex justify-content-between align-items-center'>
               Cras justo odio
               <MDBBadge color='primary' pill>
@@ -60,7 +60,7 @@ const ListGroupPage = () => {
           className='d-flex justify-content-center'
           header='Linked items'
         >
-          <MDBListGroup className='my-4 mx-4' style={{ width: '22rem' }}>
+          <MDBListGroup className='my-4 mx-4' style={{width: '22rem'}}>
             <MDBListGroupItem href='#' active>
               Cras justo odio
             </MDBListGroupItem>
@@ -79,7 +79,7 @@ const ListGroupPage = () => {
           className='d-flex justify-content-center'
           header='Links and buttons'
         >
-          <MDBListGroup className='my-4 mx-4' style={{ width: '22rem' }}>
+          <MDBListGroup className='my-4 mx-4' style={{width: '22rem'}}>
             <MDBListGroupItem href='#' active>
               Cras justo odio
             </MDBListGroupItem>
@@ -102,7 +102,7 @@ const ListGroupPage = () => {
           className='d-flex justify-content-center'
           header='Contextual classes'
         >
-          <MDBListGroup className='my-4 mx-4' style={{ width: '22rem' }}>
+          <MDBListGroup className='my-4 mx-4' style={{width: '22rem'}}>
             <MDBListGroupItem color='primary'>Cras justo odio</MDBListGroupItem>
             <MDBListGroupItem color='secondary'>
               Dapibus ac facilisis in
@@ -123,7 +123,7 @@ const ListGroupPage = () => {
           className='d-flex justify-content-center'
           header='Custom content'
         >
-          <MDBListGroup className='my-4 mx-4' style={{ width: '22rem' }}>
+          <MDBListGroup className='my-4 mx-4' style={{width: '22rem'}}>
             <MDBListGroupItem active href='#'>
               <div className='d-flex w-100 justify-content-between'>
                 <h5 className='mb-1'>List group item heading</h5>
@@ -164,4 +164,4 @@ const ListGroupPage = () => {
   );
 };
 
-export default  ListGroupPage;
+export default ListGroupPage;

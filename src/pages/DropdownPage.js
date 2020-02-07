@@ -4,7 +4,7 @@ import {
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
-  MDBContainer
+  MDBContainer,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -281,4 +281,4 @@ const DropdownPage = () => {
   );
 };
 
-export default  DropdownPage;
+export default DropdownPage;

@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBJumbotron,
   MDBIcon,
-  MDBAnimation
+  MDBAnimation,
 } from 'mdbreact';
 import MenuLink from '../components/menuLink';
 
@@ -32,7 +32,7 @@ const AddonsNavPage = () => {
                   <MenuLink to='/addons/notifications' title='Notifications' />
                   <MenuLink to='/addons/treeview' title='Treeview' />
                   <MenuLink to='/addons/rating' title='Rating' />
-                  
+
                 </ul>
               </MDBJumbotron>
             </MDBCol>
@@ -43,4 +43,4 @@ const AddonsNavPage = () => {
   );
 };
 
-export default  AddonsNavPage;
+export default AddonsNavPage;

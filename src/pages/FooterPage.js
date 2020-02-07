@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
+import {MDBCol, MDBContainer, MDBRow, MDBFooter} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -52,4 +52,4 @@ const FooterPage = () => {
   );
 };
 
-export default  FooterPage;
+export default FooterPage;
