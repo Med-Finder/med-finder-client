@@ -6,7 +6,7 @@ import {
   MDBCarouselItem,
   MDBView,
   MDBMask,
-  MDBContainer
+  MDBContainer,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -293,4 +293,4 @@ const CarouselPage = () => {
   );
 };
 
-export default  CarouselPage;
+export default CarouselPage;

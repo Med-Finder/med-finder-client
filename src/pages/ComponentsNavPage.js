@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBJumbotron,
   MDBIcon,
-  MDBEdgeHeader
+  MDBEdgeHeader,
 } from 'mdbreact';
 import MenuLink from '../components/menuLink';
 
@@ -38,7 +38,7 @@ const ComponentsNavPage = () => {
                   <MenuLink to='/components/spinner' title='Loader/Spinner' />
                   <MenuLink to='/components/tabs' title='Tabs' />
                   <MenuLink to='/components/pills' title='Pills' />
-                  
+
                 </ul>
               </MDBJumbotron>
             </MDBCol>
@@ -49,4 +49,4 @@ const ComponentsNavPage = () => {
   );
 };
 
-export default  ComponentsNavPage;
+export default ComponentsNavPage;

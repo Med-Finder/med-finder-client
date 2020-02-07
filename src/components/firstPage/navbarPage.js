@@ -7,7 +7,10 @@ import {
   MDBCollapse
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
-import ButtonPage from "./button";
+import PopLogin from './PopLogin';
+import PopRegister from './PopRegister';
+
+// import ButtonPage from "./button";
 
 class NavbarPage extends Component {
   state = {
@@ -21,14 +24,16 @@ class NavbarPage extends Component {
   render() {
     return (
       <Router>
-        <MDBNavbar color="default-color" dark expand="md">
+        <MDBNavbar color='default-color' dark expand='md'>
           <MDBNavbarBrand>
-            <strong className="white-text">Med-finder</strong>
+            <strong className='white-text'>Med-finder</strong>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={this.toggleCollapse} />
-          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBCollapse id='navbarCollapse3' isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav right>
-              <ButtonPage text={"log in"} />
+              {/* <ButtonPage text={"log in"} /> */}
+              <PopLogin />
+              <PopRegister />
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>

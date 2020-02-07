@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBNotification, MDBContainer } from 'mdbreact';
+import {MDBNotification, MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -81,7 +81,7 @@ const NotificationPage = () => {
 
       <SectionContainer header='Placement' noBorder>
         <SectionContainer dark>
-          <div style={{ minHeight: '200px', position: 'relative' }}>
+          <div style={{minHeight: '200px', position: 'relative'}}>
             <MDBNotification
               iconClassName='text-primary'
               show
@@ -92,7 +92,7 @@ const NotificationPage = () => {
               style={{
                 position: 'absolute',
                 top: 0,
-                right: 0
+                right: 0,
               }}
             />
           </div>
@@ -100,16 +100,16 @@ const NotificationPage = () => {
         <SectionContainer
           style={{
             backgroundImage:
-              "url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(122).jpg')",
-            minHeight: '350px'
+              'url(\'https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(122).jpg\')',
+            minHeight: '350px',
           }}
         >
-          <div style={{ position: 'relative' }}>
+          <div style={{position: 'relative'}}>
             <div
               style={{
                 position: 'absolute',
                 top: 0,
-                right: 0
+                right: 0,
               }}
             >
               <MDBNotification
@@ -162,4 +162,4 @@ const NotificationPage = () => {
   );
 };
 
-export default  NotificationPage;
+export default NotificationPage;

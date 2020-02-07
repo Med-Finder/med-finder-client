@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBJumbotron,
   MDBIcon,
-  MDBAnimation
+  MDBAnimation,
 } from 'mdbreact';
 import MenuLink from '../components/menuLink';
 
@@ -38,7 +38,7 @@ const AdvancedNavPage = () => {
                     to='/advanced/videocarousel'
                     title='Video Carousel'
                   />
-                  
+
                 </ul>
               </MDBJumbotron>
             </MDBCol>
@@ -49,4 +49,4 @@ const AdvancedNavPage = () => {
   );
 };
 
-export default  AdvancedNavPage;
+export default AdvancedNavPage;

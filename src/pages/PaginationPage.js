@@ -5,7 +5,7 @@ import {
   MDBPageNav,
   MDBContainer,
   MDBCol,
-  MDBRow
+  MDBRow,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -24,7 +24,7 @@ const PaginationPage = () => {
             header='Basic example'
             className='d-flex justify-content-center'
           >
-            <MDBPagination style={{ marginTop: '1rem' }}>
+            <MDBPagination style={{marginTop: '1rem'}}>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -63,7 +63,7 @@ const PaginationPage = () => {
             header='Bootstrap Pagination'
             className='d-flex justify-content-center'
           >
-            <MDBPagination style={{ marginTop: '1rem' }} circle>
+            <MDBPagination style={{marginTop: '1rem'}} circle>
               <MDBPageItem disabled>
                 <MDBPageNav>
                   <span>First</span>
@@ -109,7 +109,7 @@ const PaginationPage = () => {
             header='MDBPagination color'
             className='d-flex align-items-center flex-column'
           >
-            <MDBPagination style={{ marginTop: '1rem' }} color='blue'>
+            <MDBPagination style={{marginTop: '1rem'}} color='blue'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -138,7 +138,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='red'>
+            <MDBPagination style={{marginTop: '1rem'}} color='red'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -167,7 +167,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='teal'>
+            <MDBPagination style={{marginTop: '1rem'}} color='teal'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -196,7 +196,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='dark'>
+            <MDBPagination style={{marginTop: '1rem'}} color='dark'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -225,7 +225,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='bluegrey'>
+            <MDBPagination style={{marginTop: '1rem'}} color='bluegrey'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -254,7 +254,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='amber'>
+            <MDBPagination style={{marginTop: '1rem'}} color='amber'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -283,7 +283,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='purple'>
+            <MDBPagination style={{marginTop: '1rem'}} color='purple'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -312,7 +312,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} color='darkgrey'>
+            <MDBPagination style={{marginTop: '1rem'}} color='darkgrey'>
               <MDBPageItem disabled>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -350,7 +350,7 @@ const PaginationPage = () => {
             header='Sizing'
             className='d-flex align-items-center flex-column'
           >
-            <MDBPagination style={{ marginTop: '1rem' }} size='lg'>
+            <MDBPagination style={{marginTop: '1rem'}} size='lg'>
               <MDBPageItem>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -373,7 +373,7 @@ const PaginationPage = () => {
               </MDBPageItem>
             </MDBPagination>
 
-            <MDBPagination style={{ marginTop: '1rem' }} size='sm'>
+            <MDBPagination style={{marginTop: '1rem'}} size='sm'>
               <MDBPageItem>
                 <MDBPageNav aria-label='Previous'>
                   <span aria-hidden='true'>&laquo;</span>
@@ -402,4 +402,4 @@ const PaginationPage = () => {
   );
 };
 
-export default  PaginationPage;
+export default PaginationPage;

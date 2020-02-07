@@ -1,16 +1,14 @@
-import React, { Component } from "react";
-import FirstPage from "./components/firstPage";
+import React, {Component} from 'react';
+import FirstPage from './components/firstPage';
+import {Provider} from 'react-redux';
+import store from './store';
 // import request from './services/request'
-export default  class App extends Component {
-  componentDidMount() {
-    // console.log("trying")
-    // request.example()
-  }
+export default class App extends Component {
   render() {
     return (
-      <div>
+      <Provider store={store}>
         <FirstPage />
-      </div>
+      </Provider>
     );
   }
 }

@@ -9,6 +9,7 @@ class MarkerWithInfoWindow extends Component {
       isOpen: false
     };
     this.toggle = this.toggle.bind(this);
+    this.location = this.props.location;
   }
 
   toggle() {
@@ -17,19 +18,18 @@ class MarkerWithInfoWindow extends Component {
     });
   }
   render() {
-    const { location } = this.props;
-
+    console.log(this.location, "sssssssssssseeeeeeyyyy");
     return (
       <Marker
         onClick={this.toggle}
-        position={location}
-        title={location.title}
-        label={location.label}
+        position={this.location}
+        title={this.location.title}
+        label={this.location.title.split("pharmacy")[0][0]}
       >
         {this.state.isOpen && (
           <InfoWindow onCloseClick={this.toggle}>
-            <NavLink href={location.www} target="_blank">
-              {location.title}
+            <NavLink href={this.location.www} target='_blank'>
+              {this.location.title}
             </NavLink>
           </InfoWindow>
         )}
@@ -38,4 +38,4 @@ class MarkerWithInfoWindow extends Component {
   }
 }
 
-export default  MarkerWithInfoWindow;
+export default MarkerWithInfoWindow;

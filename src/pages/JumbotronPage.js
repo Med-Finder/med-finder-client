@@ -11,7 +11,7 @@ import {
   MDBNav,
   MDBCardImage,
   MDBCardBody,
-  MDBCardText
+  MDBCardText,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -70,12 +70,12 @@ const JumbotronPage = () => {
               noBorder
               header='Jumbotron with a background image'
             >
-              <MDBJumbotron style={{ padding: 0 }}>
+              <MDBJumbotron style={{padding: 0}}>
                 <MDBCol
                   className='text-white text-center py-5 px-4'
                   style={{
                     backgroundImage:
-                      'url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)'
+                      'url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)',
                   }}
                 >
                   <MDBCol className='py-5'>
@@ -191,4 +191,4 @@ const JumbotronPage = () => {
   );
 };
 
-export default  JumbotronPage;
+export default JumbotronPage;
