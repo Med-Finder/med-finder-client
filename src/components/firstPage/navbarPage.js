@@ -8,6 +8,7 @@ import {
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import PopLogin from './PopLogin';
+import PopRegister from './PopRegister';
 
 // import ButtonPage from "./button";
 
@@ -32,6 +33,7 @@ class NavbarPage extends Component {
             <MDBNavbarNav right>
               {/* <ButtonPage text={"log in"} /> */}
               <PopLogin />
+              <PopRegister />
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>
