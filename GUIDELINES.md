@@ -1,11 +1,13 @@
-## JS Standard Style
+Nam## Naming convention
 
-Proper indentation is required, so having `prettify` with the default settings is enough.<br>
+###### Components
 
-**important notes :**<br>
-**_No heavily coded functions inside the render method._** <br>
-**_Unused dependencies and/or variables are Not welcomed._** <br>
+The name should be in _lowerCamelCase_ as it's used for the class or/and the function in that component.<br>
 
-- Make sure that your component is properly sized and to divide it into smaller parts. We advise you to start small.
+For a component with multiple children, all of the files related to that component will be merged inside one folder for convenience.<br>
 
-- Test the cases where props are `empty` or `undefined`.
+###### Services
+
+The name should follow this pattern: <br>
+
+`{{name of the component that uses this service /* the one that uses it the most in case of multiple components */}} + Services`
