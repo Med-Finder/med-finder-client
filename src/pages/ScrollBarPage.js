@@ -1,11 +1,11 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import {MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 import './ScrollbarPage.css';
 
 const ScrollBarPage = () => {
-  const scrollContainerStyle = { width: '800px', maxHeight: '400px' };
+  const scrollContainerStyle = {width: '800px', maxHeight: '400px'};
   return (
     <MDBContainer>
       <DocsLink title='ScrollBar' href='https://mdbootstrap.com/docs/react/' />
@@ -34,4 +34,4 @@ const ScrollBarPage = () => {
   );
 };
 
-export default  ScrollBarPage;
+export default ScrollBarPage;

@@ -7,55 +7,55 @@ import {
   MDBCardBody,
   MDBTable,
   MDBTableBody,
-  MDBTableHead
+  MDBTableHead,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const TablePage = props => {
+const TablePage = (props) => {
   const data = {
     columns: [
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'First',
         field: 'first',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Last',
         field: 'last',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Handle',
         field: 'handle',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
         id: 1,
         first: 'Mark',
         last: 'Otto',
-        handle: '@mdo'
+        handle: '@mdo',
       },
       {
         id: 2,
         first: 'Jacob',
         last: 'Thornton',
-        handle: '@fat'
+        handle: '@fat',
       },
       {
         id: 3,
         first: 'Larry',
         last: 'the Bird',
-        handle: '@twitter'
-      }
-    ]
+        handle: '@twitter',
+      },
+    ],
   };
 
   const data_collspan = {
@@ -63,44 +63,44 @@ const TablePage = props => {
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'First',
         field: 'first',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Last',
         field: 'last',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Handle',
         field: 'handle',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
         id: 1,
         first: 'Mark',
         last: 'Otto',
-        handle: '@mdo'
+        handle: '@mdo',
       },
       {
         id: 2,
         first: 'Jacob',
         last: 'Thornton',
-        handle: '@fat'
+        handle: '@fat',
       },
       {
         id: 3,
         first: 'Larry the Bird',
         colspan: 2,
-        handle: '@twitter'
-      }
-    ]
+        handle: '@twitter',
+      },
+    ],
   };
 
   const data_responsive = {
@@ -108,53 +108,53 @@ const TablePage = props => {
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading0',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading1',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading2',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading3',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading4',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading5',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading6',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading7',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading8',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
@@ -167,7 +167,7 @@ const TablePage = props => {
         heading5: 'Cell',
         heading6: 'Cell',
         heading7: 'Cell',
-        heading8: 'Cell'
+        heading8: 'Cell',
       },
       {
         id: 2,
@@ -179,7 +179,7 @@ const TablePage = props => {
         heading5: 'Cell',
         heading6: 'Cell',
         heading7: 'Cell',
-        heading8: 'Cell'
+        heading8: 'Cell',
       },
       {
         id: 3,
@@ -191,9 +191,9 @@ const TablePage = props => {
         heading5: 'Cell',
         heading6: 'Cell',
         heading7: 'Cell',
-        heading8: 'Cell'
-      }
-    ]
+        heading8: 'Cell',
+      },
+    ],
   };
 
   return (
@@ -369,4 +369,4 @@ const TablePage = props => {
   );
 };
 
-export default  TablePage;
+export default TablePage;

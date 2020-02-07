@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBMedia, MDBContainer } from 'mdbreact';
+import {MDBMedia, MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -31,7 +31,7 @@ const MediaPage = () => {
       </SectionContainer>
 
       <SectionContainer>
-        <MDBMedia style={{ maxWidth: '800px' }} className='mt-3'>
+        <MDBMedia style={{maxWidth: '800px'}} className='mt-3'>
           <MDBMedia left top href='#'>
             <MDBMedia
               object
@@ -50,7 +50,7 @@ const MediaPage = () => {
       </SectionContainer>
 
       <SectionContainer>
-        <MDBMedia className='mt-1' style={{ maxWidth: '800px' }}>
+        <MDBMedia className='mt-1' style={{maxWidth: '800px'}}>
           <MDBMedia left middle href='#'>
             <MDBMedia
               object
@@ -69,7 +69,7 @@ const MediaPage = () => {
       </SectionContainer>
 
       <SectionContainer>
-        <MDBMedia className='mt-1' style={{ maxWidth: '800px' }}>
+        <MDBMedia className='mt-1' style={{maxWidth: '800px'}}>
           <MDBMedia left bottom href='#'>
             <MDBMedia
               object
@@ -181,4 +181,4 @@ const MediaPage = () => {
   );
 };
 
-export default  MediaPage;
+export default MediaPage;

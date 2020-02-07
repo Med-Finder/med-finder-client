@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBIframe } from 'mdbreact';
+import {MDBContainer, MDBIframe} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 
 const IframePage = () => {
@@ -14,4 +14,4 @@ const IframePage = () => {
   );
 };
 
-export default  IframePage;
+export default IframePage;
