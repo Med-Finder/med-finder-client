@@ -18,6 +18,7 @@ class MarkerWithInfoWindow extends Component {
     });
   }
   render() {
+    console.log(this.location, "sssssssssssseeeeeeyyyy");
     return (
       <Marker
         onClick={this.toggle}
@@ -27,7 +28,7 @@ class MarkerWithInfoWindow extends Component {
       >
         {this.state.isOpen && (
           <InfoWindow onCloseClick={this.toggle}>
-            <NavLink href={this.location.www} target="_blank">
+            <NavLink href={this.location.www} target='_blank'>
               {this.location.title}
             </NavLink>
           </InfoWindow>
