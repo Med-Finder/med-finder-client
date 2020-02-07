@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import {MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -86,4 +86,4 @@ const SpinnerPage = () => {
   );
 };
 
-export default  SpinnerPage;
+export default SpinnerPage;

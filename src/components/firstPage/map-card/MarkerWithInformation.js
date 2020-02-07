@@ -3,13 +3,13 @@ import { NavLink } from "reactstrap";
 import { Marker, InfoWindow } from "react-google-maps";
 
 class MarkerWithInfoWindow extends Component {
-  constructor({ location }) {
-    super({ location });
+  constructor(props) {
+    super(props);
     this.state = {
       isOpen: false
     };
     this.toggle = this.toggle.bind(this);
-    this.location = location;
+    this.location = this.props.location;
   }
 
   toggle() {
@@ -23,7 +23,7 @@ class MarkerWithInfoWindow extends Component {
         onClick={this.toggle}
         position={this.location}
         title={this.location.title}
-        label={this.location.label}
+        label={this.location.title.split("pharmacy")[0][0]}
       >
         {this.state.isOpen && (
           <InfoWindow onCloseClick={this.toggle}>

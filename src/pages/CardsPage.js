@@ -10,7 +10,7 @@ import {
   MDBCardVideo,
   MDBCol,
   MDBContainer,
-  MDBRow
+  MDBRow,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -29,7 +29,7 @@ const CardsPage = () => {
             header='Basic example'
             className='justify-content-center d-flex'
           >
-            <MDBCard style={{ width: '22rem' }}>
+            <MDBCard style={{width: '22rem'}}>
               <MDBCardImage
                 className='img-fluid'
                 src='https://mdbootstrap.com/img/Photos/Others/images/43.jpg'
@@ -54,7 +54,7 @@ const CardsPage = () => {
             header='Reversed card'
             className='justify-content-center d-flex'
           >
-            <MDBCard reverse style={{ width: '22rem' }}>
+            <MDBCard reverse style={{width: '22rem'}}>
               <MDBCardImage
                 zoom
                 cascade
@@ -261,4 +261,4 @@ const CardsPage = () => {
   );
 };
 
-export default  CardsPage;
+export default CardsPage;

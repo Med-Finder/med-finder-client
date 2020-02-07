@@ -8,12 +8,12 @@ import {
   MDBCardTitle,
   MDBBtn,
   MDBContainer,
-  MDBEdgeHeader
+  MDBEdgeHeader,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const EdgeHeaderPage = props => {
+const EdgeHeaderPage = (props) => {
   return (
     <MDBContainer className='mt-3 text-center'>
       <DocsLink
@@ -51,7 +51,7 @@ const EdgeHeaderPage = props => {
                   </MDBBtn>
                 </form>
                 <div className='my-2'>
-                  <p style={{ fontWeight: '300', fontSize: '0.75rem' }}>
+                  <p style={{fontWeight: '300', fontSize: '0.75rem'}}>
                     Never submit your passwords here
                   </p>
                 </div>
@@ -64,4 +64,4 @@ const EdgeHeaderPage = props => {
   );
 };
 
-export default  EdgeHeaderPage;
+export default EdgeHeaderPage;

@@ -9,7 +9,7 @@ import {
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
-  MDBBtn
+  MDBBtn,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -132,10 +132,10 @@ const ButtonPage = () => {
       </SectionContainer>
 
       <SectionContainer className='text-center' header='Block level buttons'>
-        <MDBBtn block style={{ marginBottom: '1rem' }}>
+        <MDBBtn block style={{marginBottom: '1rem'}}>
           Block level button
         </MDBBtn>
-        <MDBBtn block color='primary' style={{ marginBottom: '0rem' }}>
+        <MDBBtn block color='primary' style={{marginBottom: '0rem'}}>
           Block level button
         </MDBBtn>
       </SectionContainer>
@@ -331,4 +331,4 @@ const ButtonPage = () => {
   );
 };
 
-export default  ButtonPage;
+export default ButtonPage;

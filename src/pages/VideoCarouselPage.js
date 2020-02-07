@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer } from 'mdbreact';
+import {MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 
 const CarouselPage = () => {
@@ -51,6 +51,6 @@ const CarouselPage = () => {
       </div>
     </MDBContainer>
   );
-}
+};
 
-export default  CarouselPage;
+export default CarouselPage;

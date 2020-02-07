@@ -5,12 +5,12 @@ import {
   MDBContainer,
   MDBNavbar,
   MDBNavbarNav,
-  MDBNavItem
+  MDBNavItem,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const BreadcrumbPage = props => {
+const BreadcrumbPage = (props) => {
   return (
     <MDBContainer>
       <DocsLink
@@ -179,7 +179,7 @@ const BreadcrumbPage = props => {
       </SectionContainer>
 
       <SectionContainer header='With hamburger button'>
-        <MDBNavbar color='indigo' style={{ marginTop: '20px' }} dark>
+        <MDBNavbar color='indigo' style={{marginTop: '20px'}} dark>
           <span className='navbar-toggler-icon' />
           <MDBNavbarNav left>
             <MDBBreadcrumb color='indigo'>
@@ -203,4 +203,4 @@ const BreadcrumbPage = props => {
   );
 };
 
-export default  BreadcrumbPage;
+export default BreadcrumbPage;

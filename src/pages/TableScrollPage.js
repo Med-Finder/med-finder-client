@@ -7,73 +7,73 @@ import {
   MDBCardBody,
   MDBTable,
   MDBTableBody,
-  MDBTableHead
+  MDBTableHead,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const TableScrollPage = props => {
+const TableScrollPage = (props) => {
   const data = {
     columns: [
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'First',
         field: 'first',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Last',
         field: 'last',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Handle',
         field: 'handle',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
         id: 1,
         first: 'Mark',
         last: 'Otto',
-        handle: '@mdo'
+        handle: '@mdo',
       },
       {
         id: 2,
         first: 'Jacob',
         last: 'Thornton',
-        handle: '@fat'
+        handle: '@fat',
       },
       {
         id: 3,
         first: 'Larry',
         last: 'the Bird',
-        handle: '@twitter'
+        handle: '@twitter',
       },
       {
         id: 4,
         first: 'Mark',
         last: 'Otto',
-        handle: '@mdo'
+        handle: '@mdo',
       },
       {
         id: 5,
         first: 'Jacob',
         last: 'Thornton',
-        handle: '@fat'
+        handle: '@fat',
       },
       {
         id: 6,
         first: 'Larry',
         last: 'the Bird',
-        handle: '@twitter'
-      }
-    ]
+        handle: '@twitter',
+      },
+    ],
   };
 
   return (
@@ -97,4 +97,4 @@ const TableScrollPage = props => {
   );
 };
 
-export default  TableScrollPage;
+export default TableScrollPage;

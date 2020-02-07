@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBProgress, MDBContainer } from 'mdbreact';
+import {MDBProgress, MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -59,4 +59,4 @@ const ProgressPage = () => {
   );
 };
 
-export default  ProgressPage;
+export default ProgressPage;

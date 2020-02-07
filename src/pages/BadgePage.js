@@ -1,9 +1,9 @@
 import React from 'react';
-import { MDBBadge, MDBContainer, MDBIcon } from 'mdbreact';
+import {MDBBadge, MDBContainer, MDBIcon} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const BadgePage = props => {
+const BadgePage = (props) => {
   return (
     <MDBContainer>
       <DocsLink
@@ -218,4 +218,4 @@ const BadgePage = props => {
   );
 };
 
-export default  BadgePage;
+export default BadgePage;
