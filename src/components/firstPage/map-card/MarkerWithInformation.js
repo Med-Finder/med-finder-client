@@ -3,12 +3,13 @@ import { NavLink } from "reactstrap";
 import { Marker, InfoWindow } from "react-google-maps";
 
 class MarkerWithInfoWindow extends Component {
-  constructor(props) {
-    super(props);
+  constructor({ location }) {
+    super({ location });
     this.state = {
       isOpen: false
     };
     this.toggle = this.toggle.bind(this);
+    this.location = location;
   }
 
   toggle() {
@@ -17,19 +18,17 @@ class MarkerWithInfoWindow extends Component {
     });
   }
   render() {
-    const { location } = this.props;
-
     return (
       <Marker
         onClick={this.toggle}
-        position={location}
-        title={location.title}
-        label={location.label}
+        position={this.location}
+        title={this.location.title}
+        label={this.location.label}
       >
         {this.state.isOpen && (
           <InfoWindow onCloseClick={this.toggle}>
-            <NavLink href={location.www} target="_blank">
-              {location.title}
+            <NavLink href={this.location.www} target="_blank">
+              {this.location.title}
             </NavLink>
           </InfoWindow>
         )}
@@ -38,4 +37,4 @@ class MarkerWithInfoWindow extends Component {
   }
 }
 
-export default  MarkerWithInfoWindow;
+export default MarkerWithInfoWindow;
