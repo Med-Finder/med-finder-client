@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBAlert } from 'mdbreact';
+import {MDBContainer, MDBAlert} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -123,12 +123,12 @@ const AlertPage = () => {
           dismiss
           onClose={() =>
             alert(
-              'This event fires immediately when the close instance method is called.'
+                'This event fires immediately when the close instance method is called.',
             )
           }
           onClosed={() =>
             alert(
-              'This event is fired when the alert has been closed (will wait for CSS transitions to complete).'
+                'This event is fired when the alert has been closed (will wait for CSS transitions to complete).',
             )
           }
         >
@@ -140,4 +140,4 @@ const AlertPage = () => {
   );
 };
 
-export default  AlertPage;
+export default AlertPage;

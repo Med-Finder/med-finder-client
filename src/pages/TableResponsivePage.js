@@ -7,64 +7,64 @@ import {
   MDBCardBody,
   MDBTable,
   MDBTableBody,
-  MDBTableHead
+  MDBTableHead,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const TableResponsivePage = props => {
+const TableResponsivePage = (props) => {
   const data = {
     columns: [
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading0',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading1',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading2',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading3',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading4',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading5',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading6',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading7',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Heading',
         field: 'heading8',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
@@ -77,7 +77,7 @@ const TableResponsivePage = props => {
         heading5: 'Cell',
         heading6: 'Cell',
         heading7: 'Cell',
-        heading8: 'Cell'
+        heading8: 'Cell',
       },
       {
         id: 2,
@@ -89,7 +89,7 @@ const TableResponsivePage = props => {
         heading5: 'Cell',
         heading6: 'Cell',
         heading7: 'Cell',
-        heading8: 'Cell'
+        heading8: 'Cell',
       },
       {
         id: 3,
@@ -101,9 +101,9 @@ const TableResponsivePage = props => {
         heading5: 'Cell',
         heading6: 'Cell',
         heading7: 'Cell',
-        heading8: 'Cell'
-      }
-    ]
+        heading8: 'Cell',
+      },
+    ],
   };
 
   const data_people = {
@@ -111,38 +111,38 @@ const TableResponsivePage = props => {
       {
         label: '#',
         field: 'id',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Name',
         field: 'name',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Surname',
         field: 'surname',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Country',
         field: 'country',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'City',
         field: 'city',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Position',
         field: 'position',
-        sort: 'asc'
+        sort: 'asc',
       },
       {
         label: 'Age',
         field: 'age',
-        sort: 'asc'
-      }
+        sort: 'asc',
+      },
     ],
     rows: [
       {
@@ -152,7 +152,7 @@ const TableResponsivePage = props => {
         country: 'USA',
         city: 'New York City',
         position: 'Web Designer',
-        age: '23'
+        age: '23',
       },
       {
         id: '2',
@@ -161,7 +161,7 @@ const TableResponsivePage = props => {
         country: 'United Kingdom',
         city: 'London',
         position: 'Frontend Developer',
-        age: '36'
+        age: '36',
       },
       {
         id: '3',
@@ -170,7 +170,7 @@ const TableResponsivePage = props => {
         country: 'Spain',
         city: 'Madrid',
         position: 'Photographer',
-        age: '25'
+        age: '25',
       },
       {
         id: '4',
@@ -179,7 +179,7 @@ const TableResponsivePage = props => {
         country: 'Italy',
         city: 'Bari',
         position: 'Editor-in-chief',
-        age: '41'
+        age: '41',
       },
       {
         id: '5',
@@ -188,7 +188,7 @@ const TableResponsivePage = props => {
         country: 'Poland',
         city: 'Warsaw',
         position: 'Video Maker',
-        age: '39'
+        age: '39',
       },
       {
         id: '6',
@@ -197,7 +197,7 @@ const TableResponsivePage = props => {
         country: 'Germany',
         city: 'Berlin',
         position: 'Photographer',
-        age: '37'
+        age: '37',
       },
       {
         id: '7',
@@ -206,7 +206,7 @@ const TableResponsivePage = props => {
         country: 'USA',
         city: 'San Francisco',
         position: 'Teacher',
-        age: '52'
+        age: '52',
       },
       {
         id: '8',
@@ -215,7 +215,7 @@ const TableResponsivePage = props => {
         country: 'France',
         city: 'Paris',
         position: 'Actor',
-        age: '28'
+        age: '28',
       },
       {
         id: '9',
@@ -224,9 +224,9 @@ const TableResponsivePage = props => {
         country: 'Germany',
         city: 'Munich',
         position: 'Singer',
-        age: '35'
-      }
-    ]
+        age: '35',
+      },
+    ],
   };
 
   const data_minimal_width = {
@@ -235,47 +235,47 @@ const TableResponsivePage = props => {
         label: '#',
         field: 'id',
         sort: 'asc',
-        minimal: 'sm'
+        minimal: 'sm',
       },
       {
         label: 'Lorem ipsum dolor',
         field: 'lorem ipsum dolor',
         sort: 'asc',
-        minimal: 'lg'
+        minimal: 'lg',
       },
       {
         label: 'Lorem ipsum dolor',
         field: 'lorem ipsum',
         sort: 'asc',
-        minimal: 'sm'
+        minimal: 'sm',
       },
       {
         label: 'Lorem ipsum dolor',
         field: 'lorem ',
         sort: 'asc',
-        minimal: 'lg'
-      }
+        minimal: 'lg',
+      },
     ],
     rows: [
       {
-        id: '1',
+        'id': '1',
         'lorem ipsum dolor': 'Lorem ipsum dolor',
         'lorem ipsum': 'Lorem ipsum dolor',
-        lorem: 'Lorem ipsum dolor'
+        'lorem': 'Lorem ipsum dolor',
       },
       {
-        id: '2',
+        'id': '2',
         'lorem ipsum dolor': 'Lorem ipsum dolor',
         'lorem ipsum': 'Lorem ipsum dolor',
-        lorem: 'Lorem ipsum dolor'
+        'lorem': 'Lorem ipsum dolor',
       },
       {
-        id: '3',
+        'id': '3',
         'lorem ipsum dolor': 'Lorem ipsum dolor',
         'lorem ipsum': 'Lorem ipsum dolor',
-        lorem: 'Lorem ipsum dolor'
-      }
-    ]
+        'lorem': 'Lorem ipsum dolor',
+      },
+    ],
   };
 
   return (
@@ -374,4 +374,4 @@ const TableResponsivePage = props => {
   );
 };
 
-export default  TableResponsivePage;
+export default TableResponsivePage;

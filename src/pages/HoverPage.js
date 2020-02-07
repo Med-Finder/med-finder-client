@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+import {MDBMask, MDBView, MDBContainer, MDBRow, MDBCol} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
@@ -83,4 +83,4 @@ const HoverPage = () => {
   );
 };
 
-export default  HoverPage;
+export default HoverPage;

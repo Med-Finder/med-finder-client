@@ -18,13 +18,12 @@ class MarkerWithInfoWindow extends Component {
     });
   }
   render() {
-    console.log("sqdsdqsd45", this.location);
     return (
       <Marker
         onClick={this.toggle}
         position={this.location}
         title={this.location.title}
-        label={this.location.label}
+        label={this.location.title.split("pharmacy")[0][0]}
       >
         {this.state.isOpen && (
           <InfoWindow onCloseClick={this.toggle}>

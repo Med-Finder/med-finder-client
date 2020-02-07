@@ -1,4 +1,4 @@
-import { SEARCH } from "../actions/types";
+import {SEARCH} from '../actions/types';
 
 const initialState = {};
 

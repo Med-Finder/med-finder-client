@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBEdgeHeader, MDBContainer, MDBRow, MDBCol, MDBJumbotron, MDBIcon, MDBAnimation } from 'mdbreact';
+import {MDBEdgeHeader, MDBContainer, MDBRow, MDBCol, MDBJumbotron, MDBIcon, MDBAnimation} from 'mdbreact';
 import MenuLink from '../components/menuLink';
 
 const ModalsNavPage = () => {
@@ -21,7 +21,7 @@ const ModalsNavPage = () => {
                   <MenuLink to='/modals/modal-form' title='Modal Form' />
                   <MenuLink to='/modals/modal-examples' title='Modal Templates & Examples' />
 
-                  
+
                 </ul>
               </MDBJumbotron>
             </MDBCol>
@@ -30,6 +30,6 @@ const ModalsNavPage = () => {
       </MDBAnimation>
     </>
   );
-}
+};
 
-export default  ModalsNavPage;
+export default ModalsNavPage;

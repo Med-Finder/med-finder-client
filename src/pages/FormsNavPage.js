@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBJumbotron,
   MDBIcon,
-  MDBAnimation
+  MDBAnimation,
 } from 'mdbreact';
 import MenuLink from '../components/menuLink';
 
@@ -31,7 +31,7 @@ const FormsNavPage = () => {
                   <MenuLink to='/forms/input' title='Input' />
                   <MenuLink to='/forms/inputgroup' title='Input Group' />
                   <MenuLink to='/forms/validation' title='Validation' />
-                  
+
                 </ul>
               </MDBJumbotron>
             </MDBCol>
@@ -42,4 +42,4 @@ const FormsNavPage = () => {
   );
 };
 
-export default  FormsNavPage;
+export default FormsNavPage;

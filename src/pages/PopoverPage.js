@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
   MDBPopover,
   MDBBtn,
   MDBPopoverBody,
   MDBPopoverHeader,
-  MDBContainer
+  MDBContainer,
 } from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
@@ -29,9 +29,9 @@ const PopoverPage = () => {
           isVisible={visible}
           id='popper1'
           modifiers={{
-            placement: 'left'
+            placement: 'left',
           }}
-          onChange={val => setVisibility(val)}
+          onChange={(val) => setVisibility(val)}
         >
           <MDBBtn>popover on left</MDBBtn>
           <div>
@@ -129,4 +129,4 @@ const PopoverPage = () => {
   );
 };
 
-export default  PopoverPage;
+export default PopoverPage;

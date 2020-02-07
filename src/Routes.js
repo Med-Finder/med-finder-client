@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import NavigationNavPage from './pages/NavigationNavPage';
 import FormsNavPage from './pages/FormsNavPage';
@@ -61,7 +61,6 @@ import NotificationPage from './pages/NotificationPage';
 import InputGroupPage from './pages/InputGroupPage';
 import TreeviewPage from './pages/TreeviewPage';
 import RatingPage from './pages/RatingPage';
-
 
 
 class Routes extends React.Component {
@@ -130,15 +129,15 @@ class Routes extends React.Component {
         <Route path='/tables/datatable-api' component={DatatableApiPage} />
         <Route path='/tables/datatable' component={DatatablePage} />
 
-        
+
         <Route
           render={function() {
             return <h1>Not Found</h1>;
-          }} 
+          }}
         />
       </Switch>
     );
   }
 }
 
-export default  Routes;
+export default Routes;

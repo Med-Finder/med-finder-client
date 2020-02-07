@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
-import { MDBContainer, MDBRating } from 'mdbreact';
+import React, {useState} from 'react';
+import {MDBContainer, MDBRating} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
 const RatingPage = () => {
   const [basic] = useState([
     {
-      tooltip: 'Very Bad'
+      tooltip: 'Very Bad',
     },
     {
-      tooltip: 'Poor'
+      tooltip: 'Poor',
     },
     {
       tooltip: 'Ok',
-      choosed: true
+      choosed: true,
     },
     {
-      tooltip: 'Good'
+      tooltip: 'Good',
     },
     {
-      tooltip: 'Excellent'
-    }
+      tooltip: 'Excellent',
+    },
   ]);
 
   return (
@@ -61,16 +61,16 @@ const RatingPage = () => {
             'orange-text',
             'yellow-text',
             'lime-text',
-            'light-green-text'
+            'light-green-text',
           ]}
         />
       </SectionContainer>
 
       <SectionContainer header='With feedback' flexCenter>
-        <MDBRating iconSize='2x' feedback submitHandler={e => console.log(e)} />
+        <MDBRating iconSize='2x' feedback submitHandler={(e) => console.log(e)} />
       </SectionContainer>
     </MDBContainer>
   );
 };
 
-export default  RatingPage;
+export default RatingPage;

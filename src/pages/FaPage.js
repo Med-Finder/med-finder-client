@@ -1,9 +1,9 @@
 import React from 'react';
-import { MDBIcon, MDBContainer } from 'mdbreact';
+import {MDBIcon, MDBContainer} from 'mdbreact';
 import DocsLink from '../components/docsLink';
 import SectionContainer from '../components/sectionContainer';
 
-const FaPage = props => {
+const FaPage = (props) => {
   return (
     <MDBContainer className='mt-3'>
       <DocsLink
@@ -50,7 +50,7 @@ const FaPage = props => {
         </p>
       </SectionContainer>
 
-      <SectionContainer header='Position' style={{ minHeight: '100px' }}>
+      <SectionContainer header='Position' style={{minHeight: '100px'}}>
         <MDBIcon icon='quote-left' size='3x' border pull='right' />
         <MDBIcon icon='quote-left' size='3x' border pull='left' />
       </SectionContainer>
@@ -91,4 +91,4 @@ const FaPage = props => {
   );
 };
 
-export default  FaPage;
+export default FaPage;
