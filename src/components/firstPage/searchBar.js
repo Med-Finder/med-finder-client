@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { search } from "../../actions/mapActions";
+import { search } from "../../actions/searchBarActions";
 const SearchBar = props => {
   const [searchTerm, setTerm] = useState("");
   const handleSearchBar = searchTerm => {
